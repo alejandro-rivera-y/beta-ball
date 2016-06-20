@@ -34,7 +34,7 @@ var mobile = {
    */
   usersReady: function usersReady(io, socket) {
     mobile.users[socket.client.id].ready = true;
-    if (mobile.couldBeReady() || true) {
+    if (mobile.couldBeReady()) {
       io.emit('start', mobile.users);
     } else {
       var data = {
