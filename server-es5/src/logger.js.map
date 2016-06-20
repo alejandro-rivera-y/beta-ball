@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../server/src/logger.js"],"names":[],"mappings":";;AAIA;;;;;;AAEA,OAAO,OAAP,GAAiB,UAAU,KAAV,EAAiB;;;;AAIjC,CAJD,C","file":"logger.js","sourcesContent":["/**\n * Created by alejandro on 16/06/16.\n */\n\nimport fs from 'fs'\n\nmodule.exports = function (error) {\n\n  // TODO hacer que se almacenen los errores en un archivo\n\n}"]}

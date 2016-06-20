@@ -1,0 +1,107 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: rgb(35, 35, 35);
+}
+
+div#contenido {
+    font-size: 300%;
+    margin-top: 5%;
+    border: 1px solid rgb(35, 35, 35);
+    display: inline-block;
+    padding: 2%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.block {
+    display: block !important;
+}
+
+form#options-picker input {
+    font-size: 150%;
+    margin: 2% 0;
+    padding: 2% 4%;
+}
+
+form#options-picker {
+    padding: 5% 2% 0;
+}
+
+button {
+    font-size: 150%;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    padding: 2% 3%;
+    margin: 2% 0;
+}
+
+div#name-picker {
+    width: 100%;
+}
+
+input#name {
+    width: 60%;
+}
+
+.color-picker {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 2% 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+label.color-picker input {
+    opacity: 1;
+    position: absolute;
+    z-index: -1;
+}
+
+label.color-picker input:checked {
+    left: 36px;
+    top: 35px;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+}
+
+div#color-picker {
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+div#beta-ball-container {
+    margin-top: 1.5%;
+}
+
+h1 {
+    font-size: 500%;
+    margin: 3% 0;
+}
+
+h2#winner-name {
+    font-size: 300%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.54);
+    display: inline-block;
+    padding: 2% 10%;
+}
+
+div#timer {
+    position: absolute;
+    font-size: 600%;
+    color: #000;
+    left: 47%;
+    top: 50%;
+}

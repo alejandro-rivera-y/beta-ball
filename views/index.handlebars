@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head data-socket-connection="{{ sessionSocket }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Beta Ball</title>
+</head>
+<body>
+
+<!-- Notificaciones -->
+<div id="notificaciones"></div>
+<!-- Notificaciones -->
+
+<button id="move" class="hidden">Mover</button>
+
+<!-- Elemento que renderiza la url de la sala -->
+<div id="contenido">Cargando sala...</div>
+<!-- Elemento que renderiza la url de la sala -->
+
+<!--Selector de optiones basicas -->
+<form id="options-picker" class="hidden">
+    <div id="name-picker">
+        <input type="text" id="name" placeholder="Nombre...">
+    </div>
+    <div id="color-picker"></div>
+    <button type="submit">Seleccionar</button>
+</form>
+<!--Selector de optiones basicas -->
+
+<!-- Ventana de listo -->
+<div id="ready-window" class="hidden">
+    <button id="ready">Listo!</button>
+</div>
+<!-- Ventana de listo -->
+
+<!-- Cuenta regresiva -->
+<div id="timer"></div>
+<!-- Cuenta regresiva -->
+
+<!-- Contenedor del canvas que renderiza el mapa -->
+<div id="beta-ball-container" class="hidden">
+    <canvas id="beta-ball"></canvas>
+</div>
+<!-- Contenedor del canvas que renderiza el mapa -->
+
+<!-- Contenedor del canvas que renderiza el visor fuerza -->
+<div id="meeter-container" class="hidden">
+    <canvas id="meeter"></canvas>
+</div>
+<!-- Contenedor del canvas que renderiza el visor fuerza -->
+
+<div id="winner" class="hidden">
+    <h1>Ganador</h1>
+    <h2 id="winner-name"></h2>
+    <div>
+        <button class="new-game">Juego nuevo</button>
+    </div>
+</div>
+
+<div id="looser" class="hidden">
+    <h1>Intenta de nuevo</h1>
+    <button class="new-game">Juego nuevo</button>
+</div>
+
+<script src="/js/logger.js"></script>
+<script src="/js/beta-ball.js"></script>
+<script src="/js/enviroment.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/front-app.js"></script>
+<script src="/js/desktop-app.js"></script>
+<script src="/js/mobile-app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<pre class="output"></pre>
+
+<script type="text/javascript">
+
+    var direction = ASC
+    var internalCounter = 0
+    var lastCoordinate = 0
+    var ASC = 1
+    var DESC = 1
+    var READY_ON_TOP = false
+    var READY_ON_BOTTOM = true
+    var END_MOVE = 90 // De un angulo de 90 grados ha alcanzado el maximo
+    var BEGIN_MOVE = 0 // Comienzo del movimiento de 90 grados
+
+    function handleOrientation(event) {
+        var beta = event.beta
+        if (beta > END_MOVE && READY_ON_BOTTOM) {
+            READY_ON_TOP = true
+            READY_ON_BOTTOM = false
+        }
+        if (beta < BEGIN_MOVE && READY_ON_TOP) {
+            READY_ON_TOP = false
+            READY_ON_BOTTOM = true
+            document.querySelector('.output').innerHTML = 'Point ' + internalCounter
+            internalCounter++
+        }
+    }
+
+    window.addEventListener('deviceorientation', handleOrientation);
+</script>
+</body>
+</html>

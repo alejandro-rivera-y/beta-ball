@@ -1,0 +1,24 @@
+{
+  "name": "beta-ball",
+  "description": "Es un juego simple que implementa la funcionalidad de un socket y lo  compajina con la API de Device Motion de Javascript.",
+  "storage": {
+    "packages": "/public/bower_components"
+  },
+  "main": "application.js",
+  "authors": [
+    "Alejandro Rivera <seealejandro@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alejandro-rivera-y/beta-ball",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gyronorm": "^2.0.4"
+  }
+}
