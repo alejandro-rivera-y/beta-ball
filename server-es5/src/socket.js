@@ -42,7 +42,7 @@ io.on('connection', function (socket) {
 
   if (clientDevice.isDesktop) {
     _mobile2.default.flushData();
-    _desktop2.default.sendingUrl(socket, 'http://192.168.0.3:3000');
+    _desktop2.default.sendingUrl(socket, process.env.HOST);
   }
 
   // El usuario que ingreso a una nueva sala, emite un evento que se encarga de notificar al navegador

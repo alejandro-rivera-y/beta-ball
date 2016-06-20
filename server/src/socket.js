@@ -12,7 +12,6 @@ import socket from 'socket.io'
 import userAgent from 'express-useragent'
 import desktop from './desktop'
 import mobile from './mobile'
-
 let server = http.Server(application);
 let io = socket(server);
 
@@ -23,7 +22,7 @@ io.on('connection', socket => {
 
   if (clientDevice.isDesktop) {
     mobile.flushData();
-    desktop.sendingUrl(socket, 'http://192.168.0.3:3000');
+    desktop.sendingUrl(socket, process.env.HOST);
   }
 
   // El usuario que ingreso a una nueva sala, emite un evento que se encarga de notificar al navegador
